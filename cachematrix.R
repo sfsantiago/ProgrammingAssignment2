@@ -34,6 +34,6 @@ cacheSolve <- function(specialmatrix, ...) {
     data <- specialmatrix$get()
     inverse <- solve(data, ...)
     specialmatrix$setinv(inverse)
-    ## Return a matrix that is the inverse of 'x'
+    ## Return a matrix that is the inverse of specialmatrix
     return(inverse)
 }
